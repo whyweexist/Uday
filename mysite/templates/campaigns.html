@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load cms_tags menu_tags sekizai_tags%}
+{% load static %}
+
+{% block content %}
+<main id="main" data-aos="fade-in">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h2>Campaigns</h2>
+            <p>On this page, you'll find more than just fundraising goals; you'll find stories of grit, determination,
+                and the unyielding pursuit of knowledge. Each campaign whispers a student's dream, from aspiring doctors
+                to future engineers, all fueled by the hope of a brighter tomorrow. Explore diverse journeys, from rural
+                villages to bustling cities, and witness the power of community lifting each other towards academic
+                horizons. Join the movement of compassionate changemakers and become the wind beneath their wings. Every
+                contribution, big or small, takes a student closer to fulfilling their potential and shaping Zambia's
+                future. Browse, connect, and believe in the power of education – together, let these dreams take flight.
+            </p>
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Campaigns Section ======= -->
+    <section id="campaigns" class="campaigns">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="campaign-item">
+                        <img src="{% static 'assets/img/donors/donor-3.jpg' %}" class="img-fluid" alt="">
+                        <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                        <div class="campaign-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>Funds Need</h4>
+                                <p class="price">$169</p>
+                            </div>
+
+                            <h3><a href="campaign-details/" class="btn btn-primary">Readmore</a></h3>
+                            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores
+                                dolorem tempore.</p>
+                            <div class="donor d-flex justify-content-between align-items-center">
+                                <div class="donor-profile d-flex align-items-center">
+                                    <img src="{% static 'assets/img/donors/donor-3.jpg' %}" class="img-fluid" alt="">
+                                    <span>Campaigner1</span>
+                                </div>
+                                <div class="donor-rank d-flex align-items-center">
+                                    <i class='bx bxs-hand' ></i>150
+                                    <i class='bx bx-money-withdraw' ></i>100ZMW
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Campaign Item-->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div class="campaign-item">
+                        <img src="{% static 'assets/img/donors/donor-3.jpg' %}" class="img-fluid" alt="">
+                        <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                        <div class="campaign-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>Funds Need</h4>
+                                <p class="price">$250</p>
+                            </div>
+
+                            <h3><a href="campaign-details/" class="btn btn-primary">Readmore</a></h3>
+                            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores
+                                dolorem tempore.</p>
+                            <div class="donor d-flex justify-content-between align-items-center">
+                                <div class="donor-profile d-flex align-items-center">
+                                    <img src="{% static 'assets/img/donors/donor-3.jpg' %}" class="img-fluid" alt="">
+                                    <span>Campaigner2</span>
+                                </div>
+                                <div class="donor-rank d-flex align-items-center">
+                                    <i class='bx bxs-hand' ></i>150 
+                                    <i class='bx bx-money-withdraw' ></i>100ZMW
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Campaign Item-->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                    <div class="campaign-item">
+                        <img src="{% static 'assets/img/donors/donor-3.jpg' %}" class="img-fluid" alt="">
+                        <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                        <div class="campaign-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>Funds Need</h4>
+                                <p class="price">$180</p>
+                            </div>
+
+                            <h3><a href="campaign-details/" class="btn btn-primary">Readmore</a></h3>
+                            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores
+                                dolorem tempore.</p>
+                            <div class="donor d-flex justify-content-between align-items-center">
+                                <div class="donor-profile d-flex align-items-center">
+                                    <img src="{% static 'assets/img/donors/donor-3.jpg' %}" class="img-fluid" alt="">
+                                    <span>Campaigner3</span>
+                                </div>
+                                <div class="donor-rank d-flex align-items-center">
+                                    <i class='bx bxs-hand' ></i>150
+                                    <i class='bx bx-money-withdraw' ></i>100ZMW
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Campaign Item-->
+
+            </div>
+
+        </div>
+    </section><!-- End Campaigns Section -->
+
+</main><!-- End #main -->
+{% endblock content %}

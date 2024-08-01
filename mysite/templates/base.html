@@ -1,0 +1,167 @@
+{% load cms_tags sekizai_tags menu_tags%}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>{% page_attribute "page_title" %}</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    {% block head %}
+    {% endblock head%}
+    <!-- Favicons -->
+    <link href="{ % static 'assets/img/favicon_io/apple-touch-icon.png' %}" rel="apple-touch-icon" sizes="180x180">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon_io/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon_io/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'assets/img/favicon_io/site.webmanifest' %}">
+
+    <!-- Vendor CSS files -->
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-5/assets/css/contact-5.css">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/min.css' %}" rel="stylesheet">
+    {% render_block "css" %}
+</head>
+
+<body>
+    {% cms_toolbar %}
+    <header id="header" class="">
+        <div class="container d-flex align-items-center">
+            <h6 class=""><ahref="#"><span class="brand-title">UbuntuScholar</span></a></h6>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    {% show_menu 0 100 100 100%}
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="" class="get-started-btn">Donate</a>
+
+        </div>
+    </header><!-- End Header -->
+    {% block content %}
+
+    {% placeholder 'Content' %}
+    {% endblock content %}
+
+    {% block content1 %}
+
+    {% placeholder 'Content 1' %}
+    {% endblock content1 %}
+    <!-- ======= Line Break ====== -->
+    <!-- ======= Footer ======= -->
+
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3 class="brand-title">UbuntuScholar</h3>
+                        <p>
+                            Empowering students, building futures together.<br><br>
+                            <strong> Adam Street, New York, NY 535022</strong><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about-us/">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="donors/">Donors</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="create-campaigns/">Start a Campaign</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="student-campaign/">Browse Campaigns</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Student Resources</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Scholarship & Grant Information:</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Literacy & Budgeting Tools</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Career Guidance & Skills Development</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Mental Health & Wellbeing Support</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Study Skills & Time Management Tips</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Connect With US</h4>
+                        <p>Signup for our monthly newsletter</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Zyambo</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://zyambo.pythonanywhere.com/">Zyambo</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+    {% render_block "js" %}
+</body>
+
+</html>
