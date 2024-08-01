@@ -1,6 +1,6 @@
 # Uday
 
-**Empowering Zambian students through community-driven education crowdfunding.**
+**Empowering Enterpreneurs through community-driven education crowdfunding.**
 
 ## Overview
 
