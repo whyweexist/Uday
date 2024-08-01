@@ -1,0 +1,516 @@
+/* -------------------------------------------------------------
+# iFrame
+-------------------------------------------------------------- */
+iframe {
+  border: 1px solid black;
+  width: 400px;
+  height: 300px; /* takes precedence over the width set with the HTML width attribute */
+  display: none;
+  border-radius: 20px;
+}
+
+/*--------------------------------------------------------------
+# Branding
+--------------------------------------------------------------*/
+.brand-title {
+  margin: 0;
+  color: #ed3c0d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  font-weight:bolder;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  height: 100%;
+}
+
+a {
+  color: #845;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #847;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #845;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #847;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #845;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .logo a {
+  color: #845;
+  ;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/* -------------------------------------------------------------
+# Horizontal ruler
+--------------------------------------------------------------- */
+hr {
+  border-top: 1.5px dotted #845;
+}
+
+/*--------------------------------------------------------------
+# Contact
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+--------------------------------------------------------------*/
+.contact {
+  padding-top: 5px;
+}
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #845;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #ecf9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37423b;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #657a6d;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #845;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #845;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #845;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #845;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #845;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #845;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #3ac162;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ------------------------------------------
+# Testimonials
+---------------------------------------------- */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f7f6;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #845;
+  margin: 4px 10px;
+}
+
+.about-title {
+  margin: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #37423b;
+}
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #37423b;
+}
+
+.breadcrumbs {
+  margin-top: 73px;
+  text-align: center;
+  background: #845;
+  padding: 30px 0;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 63px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.breadcrumbs p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Counts
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+--------------------------------------------------------------*/
+.counts {
+  padding: 30px 0;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #845;
+  font-weight: 700;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #37423b;
+}
