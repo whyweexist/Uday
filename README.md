@@ -1,10 +1,10 @@
-# UbuntuScholar
+# Uday
 
 **Empowering Zambian students through community-driven education crowdfunding.**
 
 ## Overview
 
-UbuntuScholar is a platform that connects students facing financial difficulties with communities willing to support their educational aspirations. It enables students to create crowdfunding campaigns to raise funds for tuition, books, living expenses, and other educational needs. Donors can browse campaigns, learn about students' stories, and contribute directly to their success.
+Uday is a platform that connects students facing financial difficulties with communities willing to support their educational aspirations. It enables students to create crowdfunding campaigns to raise funds for tuition, books, living expenses, and other educational needs. Donors can browse campaigns, learn about students' stories, and contribute directly to their success.
 
 ## Key Features
 
@@ -32,16 +32,3 @@ UbuntuScholar is a platform that connects students facing financial difficulties
 
 We welcome contributions from developers, designers, educators, and community members who share our passion for empowering students through education.
 
-## License
-
-UbuntuScholar is licensed under the MIT License.
-
-## Contact
-
-For any questions or inquiries, please contact us at zyambopeter1@gmail.com.
-
-## Join the Movement
-
-Visit our website to learn more and get involved: ''
-
-**Let's build brighter futures together, one student at a time.**
